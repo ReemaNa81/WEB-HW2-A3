@@ -207,6 +207,22 @@
   <script src="PageAutomation.js"></script>
   <script src="TestFile.js"></script>
   <script type="module" src="/main.js"></script>
+  <script>
+    // Function to get query parameter value by name from URL
+    function getQueryParam(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+
+    // Get the user's name from the URL
+    const userName = getQueryParam('userName');
+
+    // Update the HTML content with the user's name
+    const userNameElement = document.getElementById('userName');
+    if (userNameElement) {
+      userNameElement.textContent = userName;
+    }
+  </script>
 </body>
 
 </html>

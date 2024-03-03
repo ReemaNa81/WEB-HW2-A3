@@ -7,8 +7,8 @@ class LecturerSidebarComponent extends HTMLElement {
       <div>
         <div class="profile p-8 text-center">
           <img src="images/pic_3.jpg" class="h-20 w-20 rounded-full object-cover mx-auto mb-2">
-          <h3 class="text-xl text-black">mariam sam</h3>
-          <p class="text-gray-500">Lecturer</p>
+          <h3 class="text-xl text-black" id="userName"></h3>
+          <p class="text-gray-500 "></p>
         </div>
         <nav class="flex flex-col gap-1 min-w-[240px] p-2 font-sans text-base font-normal text-gray-700">
           <a href="LecturerHome.html"
@@ -180,7 +180,7 @@ class StudentHeaderComponent extends HTMLElement {
               <!-- Dropdown Content -->
               <div class="absolute hidden bg-white text-gray-800 right-0 mt-2 p-2 rounded shadow-lg z-50"
                 id="dropdownContent">
-                <a href="profile.html" class="flex items-center w-full text-left py-2 px-4 hover:bg-gray-200">
+                <a id="profileLink" href="profile.html" class="flex items-center w-full text-left py-2 px-4 hover:bg-gray-200">
                   <i class="far fa-user-circle mr-2"></i> Profile
                 </a>
                 <button class="flex items-center w-full text-left py-2 px-4 hover:bg-gray-200">
@@ -245,9 +245,11 @@ class LecturerHeaderComponent extends HTMLElement {
               <!-- Dropdown Content -->
               <div class="absolute hidden bg-white text-gray-800 right-0 mt-2 p-2 rounded shadow-lg z-50"
                 id="dropdownContent">
-                <a href="profile.html" class="flex items-center w-full text-left py-2 px-4 hover:bg-gray-200">
-                  <i class="far fa-user-circle mr-2"></i> Profile
-                </a>
+                <form id="profileForm" method="GET" action="/user/profile">
+                <button type="submit" class="flex items-center w-full text-left py-2 px-4 hover:bg-gray-200">
+                    <i class="far fa-user-circle mr-2"></i> Profile
+                </button>
+                </form>
                 <button class="flex items-center w-full text-left py-2 px-4 hover:bg-gray-200">
                   <i class="fas fa-cog mr-2"></i> Settings
                 </button>
@@ -318,4 +320,7 @@ document.addEventListener('DOMContentLoaded', function () {
   videoSection.querySelector('.fa-plus').parentNode.addEventListener('click', function () {
     alert('Add new video functionality not implemented.');
   });
+
+
+
 });

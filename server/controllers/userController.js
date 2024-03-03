@@ -90,6 +90,7 @@ exports.loginUser = async (req, res) => {
 };
 
 
+
 exports.getAddUserForm = (req, res) => {
     res.render('add-user');
 };
