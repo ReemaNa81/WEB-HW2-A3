@@ -1,52 +1,48 @@
-A3-LMS - Learning Management System
+# <font color="blue">A3-LMS - Learning Management System</font>
 
-Introduction
+## <font color="purple">Introduction</font>
 A3-LMS is a Learning Management System designed to facilitate the management and delivery of educational content. It provides a platform for both students and lecturers to interact, access course materials, submit assignments, and track progress.
 
-Features
+## <font color="purple">Features</font>
 
-User authentication: Users can register with a new email and password and log in to their accounts.
-Role-based access control: Two types of users are supported - students and lecturers.
-MongoDB database integration: User data is stored securely in a MongoDB database.
+- <font color="green">User authentication:</font> Users can register with a new email and password and log in to their accounts.
+- <font color="green">Role-based access control:</font> Two types of users are supported - students and lecturers.
+- <font color="green">MongoDB database integration:</font> User data is stored securely in a MongoDB database.
 
-Usage
+## <font color="purple">Usage</font>
 
-Demo Credentials
+### <font color="blue">Demo Credentials</font>
 For demonstration purposes, the following credentials can be used to log in to the system:
 
-Student:
+**Student:**
 
-Email Address: dodo@gmail.com    
+- <font color="orange">Email Address:</font> dodo@gmail.com
+- <font color="orange">Password:</font> 123
+- <font color="orange">Role:</font> Student
 
-Password: 123
+**Lecturer:**
 
-Role: Student
+- <font color="orange">Email Address:</font> liza@gmail.com
+- <font color="orange">Password:</font> 123
+- <font color="orange">Role:</font> Lecturer
 
-Lecturer:
-
-Email Address: liza@gmail.com
-
-Password: 123
-
-Role: Lecturer
-
-Registering a New Account
+### <font color="blue">Registering a New Account</font>
 
 To register a new account, follow these steps:
 
-Navigate to the register page.
-Enter your email address and desired password.
-Select your role (student or lecturer).
-Click the "Register" button to create your account.
+1. Navigate to the register page.
+2. Enter your email address and desired password.
+3. Select your role (student or lecturer).
+4. Click the "Register" button to create your account.
 
-Logging In
+### <font color="blue">Logging In</font>
 
 Once you have registered an account, follow these steps to log in:
 
-Navigate to the login page.
-Enter your email address and password.
-Click the "Login" button to access your account.
+1. Navigate to the login page.
+2. Enter your email address and password.
+3. Click the "Login" button to access your account.
 
-Technologies Used
+## <font color="purple">Technologies Used</font>
 
-MongoDB: A NoSQL database used to store user data.
+- <font color="green">MongoDB:</font> A NoSQL database used to store data.
