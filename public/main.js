@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             body.classList.remove('theme-light');
             body.classList.add('theme-dark');
-            body.style.backgroundColor = '#191970';
+            body.style.backgroundColor = 'gray';
             body.style.color = 'blue';
         }
 
