@@ -71,7 +71,7 @@ const courses = [
 // Function to generate HTML for a single course card
 function generateCourseCard(course) {
     return `
-        <div class="w-full max-w-sm bg-white px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
+        <div class="w-full max-w-sm  px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500">
             <div class="tutor flex items-center gap-4 mb-6">
                 <img src="${course.tutorImage}" alt="Tutor Image" class="h-20 w-20 rounded-full object-cover">
                 <div class="info">

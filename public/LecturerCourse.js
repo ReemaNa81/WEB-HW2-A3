@@ -11,7 +11,7 @@ const videos = [
 // Function to generate HTML for a single card
 function generateVideoCard(video) {
     return `
-        <div class="box relative bg-white rounded-md p-8 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
+        <div class="box relative  rounded-md p-8 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
             <button class="absolute top-0 left-0 mt-2 ml-2 text-red-500 text-4xl hover:text-red-600 hover:border-4 border-solid hover:border-red-600 rounded-full">
                 <i class="fas fa-times"></i>
             </button>
@@ -39,7 +39,7 @@ function renderVideosCards() {
 
     // Add the 'Add new video' card
     const addCardHTML = `
-        <div class="box relative bg-white rounded-md p-8 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg w-full flex items-center justify-center"  >
+        <div class="box relative  rounded-md p-8 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg w-full flex items-center justify-center"  >
             <i class="fas fa-plus text-9xl text-gray-300  hover:text-blue-400 cursor-pointer"  onclick="triggerFileUpload()" ></i>
         </div>
     `;

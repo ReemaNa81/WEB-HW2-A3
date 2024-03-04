@@ -2,7 +2,7 @@ class LecturerSidebarComponent extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <!-- Sidebar -->
-    <aside id="sidebar" class="w-64 bg-white border-gray-400 md:flex flex-col justify-between h-screen hidden">
+    <aside id="sidebar" class="w-64 border-gray-400 md:flex flex-col justify-between h-screen hidden">
       <!-- Sidebar Content -->
       <div>
         <div class="profile p-8 text-center">
@@ -59,7 +59,7 @@ class LecturerSidebarComponent extends HTMLElement {
       </nav>
     </div>
   </aside>
-  <aside id="minimizedSidebar" class="w-16 bg-white border-r border-gray-400 flex flex-col justify-center h-screen md:hidden">
+  <aside id="minimizedSidebar" class="w-16  border-r border-gray-400 flex flex-col justify-center h-screen md:hidden">
     <!-- Minimized Sidebar Content -->
    <div class="p-2 flex flex-col items-center">
       <!-- Icons for navigation (replace with your actual icons) -->
@@ -80,7 +80,7 @@ class StudentSidebarComponent extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <!-- Sidebar -->
-  <aside id="sidebar" class="w-64 bg-white border-gray-400 md:flex flex-col justify-between h-screen hidden">
+  <aside id="sidebar" class="w-64 border-gray-400 md:flex flex-col justify-between h-screen hidden">
     <!-- Sidebar Content -->
     <div>
       <div class="profile p-8 text-center">
@@ -123,7 +123,7 @@ class StudentSidebarComponent extends HTMLElement {
     </div>
   </aside>
   <aside id="minimizedSidebar"
-    class="w-16 bg-white border-r border-gray-400 flex flex-col justify-center h-screen md:hidden">
+    class="w-16 border-r border-gray-400 flex flex-col justify-center h-screen md:hidden">
     <!-- Minimized Sidebar Content -->
     <div class="p-2 flex flex-col items-center">
       <!-- Icons for navigation (replace with your actual icons) -->
@@ -145,7 +145,7 @@ class StudentHeaderComponent extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <!-- Header -->
-      <header class="bg-white p-1 border-b-2 border-gray-400">
+      <header class=" p-1 border-b-2 border-gray-400">
       <!-- Header Content -->
       <div class="flex items-center justify-between border-b border-gray-300 p-4">
         <div>
@@ -156,7 +156,7 @@ class StudentHeaderComponent extends HTMLElement {
           </div>
         </div>
         <div class="relative mx-auto text-gray-600 hidden md:block">
-          <input class="border-2 border-gray-300 bg-white h-8 px-3 pr-16 rounded-lg text-sm focus:outline-none"
+          <input class="border-2 border-gray-300  h-8 px-3 pr-16 rounded-lg text-sm focus:outline-none"
             type="search" name="search" placeholder="Search">
           <button type="submit" class="absolute right-0 top-0 mt-2 mr-2">
             <svg class="text-gray-600 h-3 w-3 fill-current" xmlns="http://www.w3.org/2000/svg"
@@ -178,7 +178,7 @@ class StudentHeaderComponent extends HTMLElement {
                 <i class="fas fa-user"></i>
               </div>
               <!-- Dropdown Content -->
-              <div class="absolute hidden bg-white text-gray-800 right-0 mt-2 p-2 rounded shadow-lg z-50"
+              <div class="absolute hidden  text-gray-800 right-0 mt-2 p-2 rounded shadow-lg z-50"
                 id="dropdownContent">
                 <a id="profileLink" href="profile.html" class="flex items-center w-full text-left py-2 px-4 hover:bg-gray-200">
                   <i class="far fa-user-circle mr-2"></i> Profile
@@ -195,7 +195,7 @@ class StudentHeaderComponent extends HTMLElement {
           </div>
 
           <!-- Moon Icon Toggle Button -->
-          <div class="text-xl cursor-pointer" id="moonToggleBtn">
+          <div class="text-xl cursor-pointer" id="toggle-btn">
             <i class="fas fa-moon"></i>
           </div>
         </div>
@@ -210,7 +210,7 @@ class StudentHeaderComponent extends HTMLElement {
 class LecturerHeaderComponent extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-    <header class="bg-white p-1 border-b-2 border-gray-400 ">
+    <header class=" p-1 border-b-2 border-gray-400 ">
       <!-- Header Content -->
       <div class="flex items-center justify-between border-b border-gray-300 p-4">
         <div>
@@ -221,7 +221,7 @@ class LecturerHeaderComponent extends HTMLElement {
           </div>
         </div>
         <div class="relative mx-auto text-gray-600 md:block hidden">
-          <input class="border-2 border-gray-300 bg-white h-8 px-3 pr-16 rounded-lg text-sm focus:outline-none"
+          <input class="border-2 border-gray-300  h-8 px-3 pr-16 rounded-lg text-sm focus:outline-none"
             type="search" name="search" placeholder="Search">
           <button type="submit" class="absolute right-0 top-0 mt-2 mr-2">
             <svg class="text-gray-600 h-3 w-3 fill-current" xmlns="http://www.w3.org/2000/svg"
@@ -243,9 +243,9 @@ class LecturerHeaderComponent extends HTMLElement {
                 <i class="fas fa-user"></i>
               </div>
               <!-- Dropdown Content -->
-              <div class="absolute hidden bg-white text-gray-800 right-0 mt-2 p-2 rounded shadow-lg z-50"
+              <div class="absolute hidden  text-gray-800 right-0 mt-2 p-2 rounded shadow-lg z-50"
                 id="dropdownContent">
-                <form id="profileForm" method="GET" action="/user/profile">
+                <form id="profileForm" method="POST" action="/user/profile">
                 <button type="submit" class="flex items-center w-full text-left py-2 px-4 hover:bg-gray-200">
                     <i class="far fa-user-circle mr-2"></i> Profile
                 </button>
@@ -262,7 +262,7 @@ class LecturerHeaderComponent extends HTMLElement {
           </div>
 
           <!-- Moon Icon Toggle Button -->
-          <div class="text-xl cursor-pointer" id="moonToggleBtn">
+          <div class="text-xl cursor-pointer" id="toggle-btn">
             <i class="fas fa-moon"></i>
           </div>
         </div>
@@ -276,7 +276,7 @@ class LecturerHeaderComponent extends HTMLElement {
 class PageFooterComponent extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-    <footer class="bg-white p-4 border-t-2  border-gray-400 text-center hidden md:block">
+    <footer class=" p-4 border-t-2  border-gray-400 text-center hidden md:block">
       <!-- Footer Content -->
       <p>&copy; 2024 LMS. All rights reserved.</p>
     </footer>
