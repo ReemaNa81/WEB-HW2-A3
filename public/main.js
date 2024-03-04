@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
             body.classList.remove('theme-light');
             body.classList.add('theme-dark');
             body.style.backgroundColor = '#191970';
-            body.style.color = 'white';
+            body.style.color = 'blue';
         }
 
         // Toggle the icon between moon and sun

@@ -89,31 +89,31 @@ exports.loginUser = async (req, res) => {
     }
 };
 
-exports.fetchUserProfile = async (req, res) => {
-    try {        
-        console.log('lecture')
-        console.log('Received user data:', req.body);
-        const { email, password, userType } = req.body;
+// exports.fetchUserProfile = async (req, res) => {
+//     try {        
+//         console.log('lecture')
+//         console.log('Received user data:', req.body);
+//         const { email, password, userType } = req.body;
 
-        // Find the user by email and userType
-        const user = await User.findOne({ userEmail: email, userType: userType });
+//         // Find the user by email and userType
+//         const user = await User.findOne({ userEmail: email, userType: userType });
 
-        // If user not found, return an error
-        if (!user) {
-            return res.status(404).json({ message: 'User not found' });
-        }
+//         // If user not found, return an error
+//         if (!user) {
+//             return res.status(404).json({ message: 'User not found' });
+//         }
 
-        // Send the user profile data as JSON response
-        res.json({
-            userName: user.userName,
-            userEmail: user.userEmail,
-            userType: user.userType
-        });
-    } catch (error) {
-        console.error('Error fetching user profile:', error);
-        res.status(500).json({ message: 'Error fetching user profile' });
-    }
-};
+//         // Send the user profile data as JSON response
+//         res.json({
+//             userName: user.userName,
+//             userEmail: user.userEmail,
+//             userType: user.userType
+//         });
+//     } catch (error) {
+//         console.error('Error fetching user profile:', error);
+//         res.status(500).json({ message: 'Error fetching user profile' });
+//     }
+// };
 
 
 

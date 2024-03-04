@@ -243,13 +243,12 @@ class LecturerHeaderComponent extends HTMLElement {
                 <i class="fas fa-user"></i>
               </div>
               <!-- Dropdown Content -->
-              <div class="absolute hidden  text-gray-800 right-0 mt-2 p-2 rounded shadow-lg z-50"
+                <div class="absolute hidden  text-gray-800 right-0 mt-2 p-2 rounded shadow-lg z-50"
                 id="dropdownContent">
-                <form id="profileForm" method="POST" action="/user/profile">
-                <button type="submit" class="flex items-center w-full text-left py-2 px-4 hover:bg-gray-200">
-                    <i class="far fa-user-circle mr-2"></i> Profile
-                </button>
-                </form>
+                <a id="profileLink" href="profile.html" class="flex items-center w-full text-left py-2 px-4 hover:bg-gray-200">
+                  <i class="far fa-user-circle mr-2"></i> Profile
+                </a>
+              
                 <button class="flex items-center w-full text-left py-2 px-4 hover:bg-gray-200">
                   <i class="fas fa-cog mr-2"></i> Settings
                 </button>

@@ -16,7 +16,7 @@ router.post('/register', userController.addUser);
 // Define route to handle login requests
 router.post('/login', userController.loginUser);
 
-router.post('/profile', userController.fetchUserProfile);
+// router.get('/profile', userController.fetchUserProfile);
 
 
 
